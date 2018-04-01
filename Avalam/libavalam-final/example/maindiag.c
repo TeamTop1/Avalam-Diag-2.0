@@ -18,7 +18,6 @@ int main()
 	//afficherListeCoups(l);
 
 	puts("Bienvenue dans Avalam !\n");
-	scanf("");
 	puts("A vous de jouer !\n");
 	scanf("%s",fen);
 	interpretation("diag.json", fen);
@@ -85,7 +84,7 @@ int interpretation(char * filename, char * tab){
 				i++;
 				break;
 			case ["0","1","2","3","4","5","6","7","8"]:
-				for(int j = "0"; j != atoi(tab[i]); j++){
+				for(int atoi(j) = "0"; j != atoi(tab[i]); j++){
 					fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,0, STR_COULEUR,0);
 				}
 				break;

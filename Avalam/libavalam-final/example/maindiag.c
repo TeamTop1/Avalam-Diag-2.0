@@ -20,7 +20,7 @@ int main()
 	puts("Bienvenue dans Avalam !\n");
 	scanf("");
 	puts("A vous de jouer !\n");
-	scanf("%s",&fen);
+	scanf("%s",fen);
 	interpretation("diag.json", fen);
 
 	//j/Uu/UuUu/uUuUuU/UuUuUuUu/UuUuuUuU/uUuUuUuU/UuUuUu/uU;

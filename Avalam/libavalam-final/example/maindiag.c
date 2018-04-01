@@ -83,11 +83,12 @@ int interpretation(char * filename, char * tab){
 		else if(tab[i] =="/"){
 			i++;
 		}
-			
+
 		else if((47<tab[i])&&(tab[i]<57)){
-			/*for(int j = atoi("0"); j != atoi(tab[i]); j++){
-				//fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,0, STR_COULEUR,0);
-			}*/
+			for(int j = 48; j != atoi(tab[i]); j++){
+				fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,0, STR_COULEUR,0)
+			}
+	
 		}
 	
 	}

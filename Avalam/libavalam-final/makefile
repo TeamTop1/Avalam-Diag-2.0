@@ -1,5 +1,7 @@
 all: build/avalam build/avalam-static
 
+all-diag: build/avalamDiag build/avalam-diag
+
 INC=-I./include
 LIB=-L./lib-src
 

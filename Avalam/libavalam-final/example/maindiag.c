@@ -40,47 +40,47 @@ int interpretation(char * filename, char * tab){
 	fprintf(fp, "%s:[\n", STR_COLS);
 
 	while(tab[i]!="\0"){
-		if(tab[i] = "u"){
+		if(tab[i] == "u"){
 			fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,1, STR_COULEUR,1);
 			i++;
 		}
-		else if(tab[i] ="U"){
+		else if(tab[i] =="U"){
 			fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,1, STR_COULEUR,2);
 			i++;
 		}
-		else if(tab[i] ="d"){
+		else if(tab[i] =="d"){
 			fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,2, STR_COULEUR,1);
 			i++;
 		}
-		else if(tab[i] ="D"){
+		else if(tab[i] =="D"){
 			fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,2, STR_COULEUR,2);
 			i++;
 		}	
-		else if(tab[i] ="t"){
+		else if(tab[i] =="t"){
 			fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,3, STR_COULEUR,1);
 			i++;				
 		}	
-		else if(tab[i] ="T"){
+		else if(tab[i] =="T"){
 			fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,3, STR_COULEUR,2);
 			i++;
 		}	
-		else if(tab[i] ="q"){
+		else if(tab[i] =="q"){
 			fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,4, STR_COULEUR,1);
 			i++;
 		}	
-		else if(tab[i] ="Q"){
+		else if(tab[i] =="Q"){
 			fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,4, STR_COULEUR,2);
 			i++;
 		}	
-		else if(tab[i] ="c"){
+		else if(tab[i] =="c"){
 			fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,5, STR_COULEUR,1);
 			i++;
 		}
-		else if(tab[i] ="C"){
+		else if(tab[i] =="C"){
 			fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,5, STR_COULEUR,2);
 			i++;
 		}
-		else if(tab[i] ="/"){
+		else if(tab[i] =="/"){
 			i++;
 		}
 			

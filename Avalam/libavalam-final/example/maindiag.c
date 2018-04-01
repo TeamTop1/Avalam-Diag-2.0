@@ -40,47 +40,47 @@ int interpretation(char * filename, char * tab){
 	while(tab[i]!="\0"){
 		switch(tab[i])
 		{
-			case "u":
+			case 'u':
 				fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,1, STR_COULEUR,1);
 				i++;
 				break;
-			case "U":
+			case 'U':
 				fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,1, STR_COULEUR,2);
 				i++;
 				break;
-			case "d":
+			case 'd':
 				fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,2, STR_COULEUR,1);
 				i++;
 				break;
-			case "D":
+			case 'D':
 				fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,2, STR_COULEUR,2);
 				i++;
 				break;
-			case "t":
+			case 't:
 				fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,3, STR_COULEUR,1);
 				i++;				
 				break;
-			case "T":
+			case 'T':
 				fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,3, STR_COULEUR,2);
 				i++;
 				break;
-			case "q":
+			case 'q':
 				fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,4, STR_COULEUR,1);
 				i++;
 				break;
-			case "Q":
+			case 'Q':
 				fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,4, STR_COULEUR,2);
 				i++;
 				break;
-			case "c":
+			case 'c':
 				fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,5, STR_COULEUR,1);
 				i++;
 				break;
-			case "C":
+			case 'C':
 				fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,5, STR_COULEUR,2);
 				i++;
 				break;
-			case "/":
+			case '/':
 				i++;
 				break;
 			case ( '0' || '1' || '2' || '3' || '4' || '5' || '6' || '7' || '8' ):

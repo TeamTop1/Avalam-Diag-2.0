@@ -31,7 +31,7 @@ int interpretation(char * filename, char * tab){
 	fp = fopen(filename, "w");
 	int i = 0;
 	if(tab[0] == "j") fprintf(fp, "{\n%s:%d,\n",STR_TURN,1);
-	else fprintf(fp, "{\n%s:%d,\n",STR_TURN,1);
+	else fprintf(fp, "{\n%s:%d,\n",STR_TURN,2);
 	
 	/*fprintf(fp, "%s:%d,\n",STR_SCORE_J,s.nbJ); 
 	fprintf(fp, "%s:%d,\n",STR_SCORE_J5,s.nbJ5); 

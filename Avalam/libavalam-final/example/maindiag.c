@@ -90,11 +90,11 @@ int interpretation(char * filename, char * tab){
 				}
 			i++;
 			break;
-			case "j":
+			case 'j':
 				fprintf(fp, "{\n%s:1,\n",STR_TURN);
 				i++;
 				break;
-			case "r":
+			case 'r':
 				fprintf(fp, "{\n%s:2,\n",STR_TURN);
 				i++;
 				break;

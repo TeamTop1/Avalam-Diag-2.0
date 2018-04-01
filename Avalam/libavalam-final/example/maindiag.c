@@ -56,7 +56,7 @@ int interpretation(char * filename, char * tab){
 				fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,2, STR_COULEUR,2);
 				i++;
 				break;
-			case 't:
+			case 't':
 				fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,3, STR_COULEUR,1);
 				i++;				
 				break;

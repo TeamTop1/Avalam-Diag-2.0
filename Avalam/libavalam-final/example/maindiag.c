@@ -8,7 +8,7 @@ int main()
 {
 	int numCase, numCaseD; 
 	T_Score s ; 
-	char * fen;
+	char fen[54];
 
 	T_Position p = getPositionInitiale();
 	//afficherPosition(p);

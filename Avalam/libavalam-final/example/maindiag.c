@@ -30,8 +30,6 @@ int interpretation(char * filename, char * tab){
 	FILE * fp;
 	fp = fopen(filename, "w");
 	int i = 0;
-	if(tab[0] == "j") fprintf(fp, "{\n%s:%d,\n",STR_TURN,1);
-	else fprintf(fp, "{\n%s:%d,\n",STR_TURN,2);
 	
 	/*fprintf(fp, "%s:%d,\n",STR_SCORE_J,s.nbJ); 
 	fprintf(fp, "%s:%d,\n",STR_SCORE_J5,s.nbJ5); 
@@ -90,6 +88,14 @@ int interpretation(char * filename, char * tab){
 				for(int j = "0"; j != atoi(tab[i]); j++){
 					fprintf(fp, ",\n\t{%s:%d, %s:%d}",STR_NB,0, STR_COULEUR,0);
 				}
+				break;
+			case "j":
+				fprintf(fp, "{\n%s:1,\n",STR_TURN);
+				i++;
+				break;
+			case "r":
+				fprintf(fp, "{\n%s:2,\n",STR_TURN);
+				i++;
 				break;
 			default:
 				break;

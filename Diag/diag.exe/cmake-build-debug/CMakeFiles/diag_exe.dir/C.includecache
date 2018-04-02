@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/avalam.h
+
+../include/topologie.h
+
+/home/pilou/Documents/LE1/Challenge mj/Diag/diag.exe/example/diag.c
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+avalam.h
+/home/pilou/Documents/LE1/Challenge mj/Diag/diag.exe/example/avalam.h
+topologie.h
+/home/pilou/Documents/LE1/Challenge mj/Diag/diag.exe/example/topologie.h
+
+/home/pilou/Documents/LE1/Challenge mj/Diag/diag.exe/example/main.c
+stdio.h
+-
+string.h
+-
+avalam.h
+/home/pilou/Documents/LE1/Challenge mj/Diag/diag.exe/example/avalam.h
+topologie.h
+/home/pilou/Documents/LE1/Challenge mj/Diag/diag.exe/example/topologie.h
+
+/home/pilou/Documents/LE1/Challenge mj/Diag/diag.exe/lib-src/libavalam.c
+stdio.h
+-
+avalam.h
+/home/pilou/Documents/LE1/Challenge mj/Diag/diag.exe/lib-src/avalam.h
+
